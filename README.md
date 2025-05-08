@@ -13,3 +13,16 @@ Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, *
     ├── seritler/seritler.json # Çizilen şerit verisi
     ├── girdi/video1.mp4 # Test videosu
     ├── cikti/ # Log ve video çıktısı
+
+## Dosya Açıklamaları ##
+
+    | Dosya Adı                     | Açıklama                                                                               |
+    | ----------------------------- | ---------------------------------------------------------------------------------------|
+    | `main.py`                     | Projenin ana dosyası, araç tespiti vetakibi yapar, yön analizi ve şerit eşlemesi yapar.| 
+    | `moduller/tespit.py`          | YOLOv8 modeli ile araç tespiti yapar. Yalnızca belirli araç sınıflarını filtreler.     |
+    | `moduller/takip.py`           | Her araca bir ID atayarak basit mesafe tabanlı bir algoritmayla takip işlemini yürütür.|
+    | `moduller/loglayici.py`       | Gelen/giden araç sayısını, şerit bazlı geçişleri ve zaman damgalı verileri loglar.     |
+    | `moduller/serit_yukleyici.py` | Şerit tanımlarını yükler ve bir noktanın hangi şeride ait olduğunu tespit eder.        |
+    | `serit_secici.py`             | Kullanıcının video üzerinde fare ile şeritleri çizmesini sağlar.                       |
+    | `serit_test_goster.py`        | Şerit bölgelerinin doğruluğunu test etmek için kullanılır. 
+
