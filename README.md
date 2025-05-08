@@ -14,7 +14,7 @@ Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, *
     ├── girdi/video1.mp4 # Test videosu
     ├── cikti/ # Log ve video çıktısı
 
-# Dosya Açıklamaları #
+## Dosya Açıklamaları ##
 | Dosya Adı             | Açıklama                                                                               |
 | ----------------------| ---------------------------------------------------------------------------------------|
 | `main.py`             | Projenin ana dosyası, araç tespiti vetakibi yapar, yön analizi ve şerit eşlemesi yapar.| 
