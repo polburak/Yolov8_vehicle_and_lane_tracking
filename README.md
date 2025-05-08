@@ -2,17 +2,19 @@
 Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, **takibi**, **şerit belirleme** ve **geliş/gidiş yönü analizini** gerçekleştiren Python tabanlı bir görüntü işleme uygulamasıdır.
 
 ## Klasör Yapısı ##
-    ├── main.py # Ana kontrol dosyası
+    ├── main.py
     ├── moduller/
-    │ ├── tespit.py # YOLOv8 ile araç tespiti
-    │ ├── takip.py # Araç takip ve ID atama
-    │ ├── loglayici.py # Geliş/gidiş/şerit loglama
-    │ ├── serit_yukleyici.py # Şerit tespiti
-    ├── serit_secici.py # Manuel şerit çizim aracı
-    ├── serit_test_goster.py # Şeritleri doğrulama aracı
-    ├── seritler/seritler.json # Çizilen şerit verisi
-    ├── girdi/video1.mp4 # Test videosu
-    ├── cikti/ # Log ve video çıktısı
+    │ ├── tespit.py 
+    │ ├── takip.py 
+    │ ├── loglayici.py 
+    │ ├── serit_yukleyici.py 
+    ├── serit_secici.py 
+    ├── serit_test_goster.py 
+    ├── seritler/seritler.json 
+    ├── girdi/video1.mp4 
+    ├── cikti/
+    │ ├── video1_sonuc.mp4
+      ├── video1_log.tx 
 
 ## Dosya Açıklamaları ##
 | Dosya Adı             | Açıklama                                                                               |
