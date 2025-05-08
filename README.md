@@ -26,3 +26,6 @@ Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, *
     | `serit_secici.py`             | Kullanıcının video üzerinde fare ile şeritleri çizmesini sağlar.                       |
     | `serit_test_goster.py`        | Şerit bölgelerinin doğruluğunu test etmek için kullanılır. 
 
+## [Test Videosunu İndir](https://drive.google.com/file/d/1v5Hh2fll-8pAtMIrMuP1mIsLRkn9lnN-/view?usp=sharing) ## 
+
+## [İşlenmiş Sonuç Videosunu İndir](https://drive.google.com/file/d/1V60vCSv-gAfhNB3mM55zURU1JXkbPTVX/view?usp=sharing) ##
