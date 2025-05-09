@@ -1,33 +1,35 @@
 # Yolov8_vehicle_and_lane_tracking
-Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, **takibi**, **şerit belirleme** ve **geliş/gidiş yönü analizini** gerçekleştiren Python tabanlı bir görüntü işleme uygulamasıdır.
+This project is a Python-based computer vision application that performs real-time vehicle detection, tracking, lane identification, and incoming/outgoing direction analysis on a predefined video.
 
-## Klasör Yapısı ##
+## Project Structure ##
     ├── main.py
-    ├── moduller/
-    │ ├── tespit.py 
-    │ ├── takip.py 
-    │ ├── loglayici.py 
-    │ ├── serit_yukleyici.py 
-    ├── serit_secici.py 
-    ├── serit_test_goster.py 
-    ├── seritler/seritler.json 
-    ├── girdi/video1.mp4 
-    ├── cikti/
-    │ ├── video1_sonuc.mp4
-      ├── video1_log.tx 
+    ├── modules/
+    │   ├── detector.py          
+    │   ├── tracker.py           
+    │   ├── logger.py            
+    │   ├── lane_loader.py       
+    ├── lane_selector.py         
+    ├── show_lane_test.py        
+    ├── lanes/
+    │   └── lanes.json           
+    ├── input/
+    │   └── video1.mp4           
+    ├── output/
+    │   ├── video1_result.mp4   
+    │   └── video1_log.txt       
 
 ## Dosya Açıklamaları ##
-| Dosya Adı             | Açıklama                                                                                |
-| ----------------------| ----------------------------------------------------------------------------------------|
-| `main.py`             | Projenin ana dosyası, araç tespiti ve takibi yapar, yön analizi ve şerit eşlemesi yapar.| 
-| `tespit.py`           | YOLOv8 modeli ile araç tespiti yapar. Yalnızca belirli araç sınıflarını filtreler.      |
-| `takip.py`            | Her araca bir ID atayarak basit mesafe tabanlı bir algoritmayla takip işlemini yürütür. |
-| `loglayici.py`        | Gelen/giden araç sayısını, şerit bazlı geçişleri ve zaman damgalı verileri loglar.      |
-| `serit_yukleyici.py`  | Şerit tanımlarını yükler ve bir noktanın hangi şeride ait olduğunu tespit eder.         |
-| `serit_secici.py`     | Kullanıcının video üzerinde fare ile şeritleri çizmesini sağlar.                        |
-| `serit_test_goster.py`| Şerit bölgelerinin doğruluğunu test etmek için kullanılır. 
+| File Name             | Description                                                                                                |
+| ----------------------| -----------------------------------------------------------------------------------------------------------|
+| `main.py`             | Main script of the project. Performs vehicle detection and tracking, direction analysis, and lane matching.| 
+| `detector.py`         | Performs vehicle detection using the YOLOv8 model. Filters only specific vehicle classes.                  |
+| `tracker.py`          | Assigns IDs to each vehicle and tracks them using a simple distance-based algorithm.                       |
+| `logger.py`           | Logs incoming/outgoing vehicle counts, lane-based transitions, and timestamped events.                     |
+| `lane_loader.py`      | Loads predefined lane definitions and detects which lane a point belongs to.                               |
+| `lane_selector.py`    | Allows the user to draw lane regions interactively on the video using mouse clicks.                        |
+| `show_lane_test.py`   | Used to test and visualize the accuracy of lane regions on a sample frame. 
     
 
-## [Test Videosunu İndir](https://drive.google.com/file/d/1v5Hh2fll-8pAtMIrMuP1mIsLRkn9lnN-/view?usp=sharing) ## 
+## [Click here to download the test video](https://drive.google.com/file/d/1v5Hh2fll-8pAtMIrMuP1mIsLRkn9lnN-/view?usp=sharing) ## 
 
-## [İşlenmiş Sonuç Videosunu İndir](https://drive.google.com/file/d/1V60vCSv-gAfhNB3mM55zURU1JXkbPTVX/view?usp=sharing) ##
+## [Click here to download the processed output video](https://drive.google.com/file/d/1V60vCSv-gAfhNB3mM55zURU1JXkbPTVX/view?usp=sharing) ##
