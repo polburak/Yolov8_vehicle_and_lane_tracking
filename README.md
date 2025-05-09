@@ -18,7 +18,7 @@ This project is a Python-based computer vision application that performs real-ti
     │   ├── video1_result.mp4   
     │   └── video1_log.txt       
 
-## Dosya Açıklamaları ##
+## Module Overview  ##
 | File Name             | Description                                                                                                |
 | ----------------------| -----------------------------------------------------------------------------------------------------------|
 | `main.py`             | Main script of the project. Performs vehicle detection and tracking, direction analysis, and lane matching.| 
