@@ -2,7 +2,7 @@ import cv2
 import json
 import os
 
-video_yolu = "girdi/test1.mp4"
+video_yolu = "girdi/video1.mp4"
 serit_kayit_yolu = "seritler/seritler.json"
 os.makedirs("seritler", exist_ok=True)
 
