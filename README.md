@@ -17,14 +17,14 @@ Bu proje, tanımlı video üzerinde gerçek zamanlı olarak **araç tespiti**, *
       ├── video1_log.tx 
 
 ## Dosya Açıklamaları ##
-| Dosya Adı             | Açıklama                                                                               |
-| ----------------------| ---------------------------------------------------------------------------------------|
-| `main.py`             | Projenin ana dosyası, araç tespiti vetakibi yapar, yön analizi ve şerit eşlemesi yapar.| 
-| `tespit.py`           | YOLOv8 modeli ile araç tespiti yapar. Yalnızca belirli araç sınıflarını filtreler.     |
-| `takip.py`            | Her araca bir ID atayarak basit mesafe tabanlı bir algoritmayla takip işlemini yürütür.|
-| `loglayici.py`        | Gelen/giden araç sayısını, şerit bazlı geçişleri ve zaman damgalı verileri loglar.     |
-| `serit_yukleyici.py`  | Şerit tanımlarını yükler ve bir noktanın hangi şeride ait olduğunu tespit eder.        |
-| `serit_secici.py`     | Kullanıcının video üzerinde fare ile şeritleri çizmesini sağlar.                       |
+| Dosya Adı             | Açıklama                                                                                |
+| ----------------------| ----------------------------------------------------------------------------------------|
+| `main.py`             | Projenin ana dosyası, araç tespiti ve takibi yapar, yön analizi ve şerit eşlemesi yapar.| 
+| `tespit.py`           | YOLOv8 modeli ile araç tespiti yapar. Yalnızca belirli araç sınıflarını filtreler.      |
+| `takip.py`            | Her araca bir ID atayarak basit mesafe tabanlı bir algoritmayla takip işlemini yürütür. |
+| `loglayici.py`        | Gelen/giden araç sayısını, şerit bazlı geçişleri ve zaman damgalı verileri loglar.      |
+| `serit_yukleyici.py`  | Şerit tanımlarını yükler ve bir noktanın hangi şeride ait olduğunu tespit eder.         |
+| `serit_secici.py`     | Kullanıcının video üzerinde fare ile şeritleri çizmesini sağlar.                        |
 | `serit_test_goster.py`| Şerit bölgelerinin doğruluğunu test etmek için kullanılır. 
     
 
